@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/images/logo.svg">
+    <meta name="description" content="Patrick Richardson Portfolio">
+    <meta name="author" content="Patrick R. Richardson">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick's Portfolio</title>
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+
+<body onload="getPics()">
+    <div class="site-content-wrapper">
+        <header>
+            <nav class="navbar">
+                <svg class="brand" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722.74 427.53">
+                    <path class="b"
+                        d="M430.47,177.34c0,92.08-77.18,167.47-175.01,173.88v59.29c0,7.76-6.26,14.01-14.01,14.01h-1.03c-14.58,0-36.54-1.57-54.73-3.14-38.65-3.34-75.78-17.72-105.7-42.43-1.45-1.18-2.85-2.36-4.25-3.58C29.87,335.44,1.36,276.1,3.07,210.13,5.9,102.49,93.85,16.06,214.65,4.37c8.91-.88,18.01-1.35,27.27-1.37,104.13,0,188.55,78.07,188.55,174.34Z" />
+                    <path class="c"
+                        d="M295.27,250.18c0-92.08,77.18-167.47,175.01-173.88V17.01c0-7.76,6.26-14.01,14.01-14.01h1.03c14.58,0,36.54,1.57,54.73,3.14,38.65,3.34,75.78,17.72,105.7,42.43,1.45,1.18,2.85,2.36,4.25,3.58,45.87,39.93,74.39,99.27,72.67,165.24-2.82,107.64-90.78,194.08-211.57,205.76-8.91,.88-18.01,1.35-27.27,1.37-104.13,0-188.55-78.07-188.55-174.34Z" />
+                    <circle class="d" cx="698.66" cy="400.45" r="24.08" />
+                </svg>
+                <button class="hamburger" aria-label="Right-Align"></button>
+                <ul class="main-nav">
+                    <li>
+                        <a class="menu-link active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="resume.html">Résumé</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="join.html">Join</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="gallery">
+            <main class="portfolio-main">
+                <h1 class="main">Portfolio</h1>
+                <section class="portfolio-section">
+                    <figure>
+                        <img src="images/Crucial Commandment - Always Be Bold In The Face Of Danger.webp" loading="lazy"
+                            alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439572166/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Crucial Commandment - Always Be Bold In
+                                    The
+                                    Face Of Danger"</a> by <a class="attribution-link" href="https://flic.kr/ps/3ZQVwF"
+                                    target="_blank" rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Endorphins & Adreneline.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440027845/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Endorphins & Adreneline"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Five Household Objects - Illustration Project.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848909/in/dateposted-public/"
+                                    target="blank" rel="noopener noreferrer">"Five Household Objects"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Forbidden Love - Illustration Project.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440027735/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Forbidden Love - Illustration
+                                    Project"</a> by
+                                <a class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/African American Magazine Updated.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439849274/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Greatest African American Artists -
+                                    Richardson Magazine (Cover)"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/full magazine F.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440094443/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Greatest African American Artists -
+                                    Richardson Magazine (Editorial Pages)"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/full magazine Fin.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440094258/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Greatest African American Artists -
+                                    Richardson Magazine (Editorial Pages)"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/full magazine Fina.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571831/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Greatest African American Artists -
+                                    Richardson Magazine (Editorial Pages)"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Personal Bubble.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439070757/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Personal Bubble"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Space Odyssey.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440028130/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Space Odyssey"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Blonde Netflix db.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440028050/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Blonde - Netflix"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Gods' Ransom.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439070022/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Gods' Ransom"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Maya Menu Design.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439071582/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Maya Menu Design"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/UX Design_edited.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848754/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Volt Lighting Inc. - UI Design"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Book Jacket.jp2.jpg" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440028020/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Basics 101 - Book Jacket"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/George Floyd Poster 2_2.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571771/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"George Floyd Poster"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Calling Reach.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440094533/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Calling Reach"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Cautionary Touches.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440027845/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Cautionary Touches"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Lisa Moments.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571731/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Lisa Moments"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Release.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571991/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Release"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/SAME.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848774/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"SAME"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Me v. Anxiety.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571586/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Me v. Anxiety"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Monochromatic Acrylic Self Portrait.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440093908/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Monochromatic Acrylic Self Portrait"</a>
+                                by
+                                <a class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Tomorrow Isn't Promised.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571941/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Tomorrow Isn't Promised"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Worst Day 1_2.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848729/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Worst Day"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Worst Day 2_2.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439571916/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Better Day"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Model Drawing.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439069847/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Model Drawing"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Still Life Project.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439070717/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Still Life Project"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Entre.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439070422/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Entre"</a> by <a class="attribution-link"
+                                    href="https://flic.kr/ps/3ZQVwF" target="_blank" rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Opposing Spirit.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52440027230/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Opposing Spirit"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Window.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848734/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Window"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick
+                                    Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Q&R - Experimental Typography.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52439848794/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Q&R - Experimental Typography"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Avian Droplets Typeface.webp" loading="lazy" alt="">
+                        <figcaption>
+                            <p class="caption"><a class="attribution-link"
+                                    href="https://www.flickr.com/photos/196729925@N05/52495477639/in/dateposted-public/"
+                                    target="_blank" rel="noopener noreferrer">"Avian Droplets Typeface"</a> by <a
+                                    class="attribution-link" href="https://flic.kr/ps/3ZQVwF" target="_blank"
+                                    rel="noopener noreferrer">Patrick Richardson</a>
+                                is a free license under <a class="attribution-link"
+                                    href="https://creativecommons.org/share-your-work/" target="_blank"
+                                    rel="noopener noreferrer">creativecommons</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </main>
+        </div>
+
+        <footer class="site-credits">
+            <p> © 2022 Patrick Richardson </p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Covered+By+Your+Grace&family=Knewave&family=Montserrat&family=Paytone+One&family=Raleway&family=Shadows+Into+Light&display=swap');
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(96, 159, 180);
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: left center;
+    line-height: 1.5;
+    letter-spacing: 0.07rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    font-family: "raleway", sans-serif;
+}
+
+body::before {
+    background: linear-gradient(180deg, #4f72bc 30%, #072668 100%);
+    background-repeat: no-repeat;
+    content: ' ';
+    display: block;
+    min-height: 100vh;
+    left: 0;
+    background-size: cover;
+    opacity: 0.6;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+
+    /* Have to explicitly set bottom to 0 otherwise will have a gap at the bottom of the image between it and the bottom of the viewport */
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.site-content-wrapper {
+    flex: 1;
+    width: 100%;
+}
+
+.formkit-header {
+    font-family: "shadows into light", sans-serif;
+}
+
+.formkit-content {
+    font-family: "shadows into light", sans-serif;
+}
+
+.formkit-disclaimer {
+    font-family: "shadows into light", sans-serif;
+    text-align: center;
+}
+
+.formkit-input {
+    font-family: "shadows into light", sans-serif;
+    text-align: center;
+}
+
+.formkit-submit {
+    font-family: "shadows into light", sans-serif;
+}
+
+
+
+/* nav styles using Flexbox (screens greater than 899px) */
+/* Logo Styling */
+/*===================NAV=================*/
+
+ul {
+    margin: 0.5vw;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+li {
+    position: relative;
+    padding: 8px;
+    font-family: "shadows into light", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    font-size: 2.75vh;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: static;
+    background: #fff;
+    transition: width 0.3s ease .1s, left 0.3s ease .1s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+.header {
+    background: rgba(104, 151, 187, 1);
+    margin-top: 0;
+    width: 100%;
+}
+
+.index-header {
+    background: transparent;
+}
+
+.brand {
+    display: flex;
+    height: auto;
+    margin-left: 1.125rem;
+    max-width: 5.5rem;
+    width: 100%;
+}
+
+.b {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 6px;
+}
+
+.c {
+    fill: #f1e97e;
+}
+
+.d {
+    fill: #fdfefe;
+}
+
+svg {
+    max-width: 6rem;
+    width: 100%;
+    height: auto;
+}
+
+/* End Header Logo Styling */
+
+
+/* nav styles using Flexbox (screens greater than 899px) */
+
+.navbar {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    padding-bottom: 0;
+    width: 100vw;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    width: 100vw;
+}
+
+a {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fdc47f;
+}
+
+.header a:hover {
+    color: #fdc47f;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* End nav styles using Flexbox (screens greater than 899px) */
+
+/* media query for site navigation for screens smaller than 900px */
+@media (max-width: 899px) {
+
+    .header {
+        background: #2c5788;
+        margin-top: 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .brand {
+        display: flex;
+        height: auto;
+        margin-left: 1.125rem;
+        width: 100%;
+    }
+
+    li {
+        margin: 1.5rem;
+    }
+
+    a {
+        display: block;
+    }
+
+    a:hover {
+        color: #f2e97e;
+    }
+
+    /* Responsive Hamburger menu styling */
+    .hamburger {
+        background-color: transparent;
+        /* show the hamburger menu image */
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+        border: none;
+        cursor: pointer;
+        display: block;
+        height: 36px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 36px;
+        /* always keep ham on top of everything */
+        z-index: 20;
+    }
+
+    /* change hamburger image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-size: 100%;
+    }
+
+    .main-nav {
+        background: #2c5788;
+        display: block;
+        height: 100vh;
+        left: 0;
+        margin-top: 0;
+        padding-top: 5rem;
+        overflow-y: hidden;
+        position: fixed;
+        top: 0;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
+        width: 100vw;
+        /* needed for me because of my intro box in index.html.
+        Otherwise navigation backgrop would be behind the intro box when opened */
+        z-index: 10;
+    }
+
+    .showNav {
+        /* show the menu */
+        transform: translateY(0);
+    }
+
+    /* Styling for .active class for active page url */
+    .active {
+        color: whitesmoke;
+    }
+
+    .formkit-background {
+        display: none;
+    }
+
+    /* End styling for .active class for active page url */
+}
+
+/* End media query for site navigation for screens smaller than 900px */
+
+form {
+    margin: 12vh auto;
+
+}
+
+.site-credits p {
+    text-align: center;
+}
+
+/* ==============================FOOTER=================================== */
+.site-credits p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "shadows into light", sans-serif;
+    color: palegoldenrod;
+}
